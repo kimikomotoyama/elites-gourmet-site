@@ -24,5 +24,6 @@ module ElitesGourmetSite
     config.active_record.raise_in_transactional_callbacks = true
     # config.autoload_paths += Dir[Rails.root.join('app', 'uploaders')]
     config.action_view.field_error_proc = Proc.new { |html_tag, instance| %Q(#{html_tag}).html_safe }
+    config.action_view.field_error_proc = proc { |html_tag, instance| html_tag }
   end
 end
