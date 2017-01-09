@@ -6,7 +6,7 @@
   text-align: right;
 }
 
-.wrapper.restaurant_input, .wrapper.restaurant_confirm, .wrapper.restaurant_index {
+div.wrapper.restaurant_input, div.wrapper.restaurant_confirm, div.wrapper.restaurant_index, div.wrapper.restaurant_show {
   margin-top: 0;
 }
 
@@ -33,7 +33,7 @@ ul.genre_list {
   }
 }
 
-.wrapper.restaurant_index {
+div.wrapper.restaurant_index, div.wrapper.restaurant_show {
   width: 95%;
   .new_restaurant {
     margin-bottom: 15px;
@@ -81,4 +81,41 @@ ul.genre_list {
    }
  }
   }
+}
+
+div.wrapper.restaurant_show {
+ div.name {
+   float: left;
+   font-size: 18px;
+ }
+ div.operation_restaurant {
+   float: right;
+ }
+ div.big_image {
+   text-align: center;
+   img {
+     width: 100%;
+     height: 100%;
+   }
+ }
+ ul.small_images {
+   list-style: none;
+   padding: 0;
+   li {
+     display: inline-block;
+   }
+   img {
+     width: 100px;
+     height: 100px;
+     margin: 15px;
+   }
+ }
+ div.info {
+   > div {
+     margin-bottom: 10px;
+   }
+   label {
+     margin-right: 15px;
+   }
+ }
 }
