@@ -51,11 +51,11 @@ div.wrapper.restaurant_index, div.wrapper.restaurant_show {
  margin-bottom: 10px;
   }
   .restaurant_list {
- .per_restaurant {
-   border: 1px solid;
-   border-radius: 5px;
-   margin-bottom: 10px;
-   padding: 5px;
+   .per_restaurant {
+     border: 1px solid;
+     border-radius: 5px;
+     margin-bottom: 10px;
+     padding: 5px;
    .name {
      font-size: 18px;
      font-weight: bold;
@@ -77,6 +77,12 @@ div.wrapper.restaurant_index, div.wrapper.restaurant_show {
        }
      }
      .genres {
+     }
+     .about * {
+       font-size: 16px !important;
+       color: black !important;
+       font-weight: normal !important;
+       font-style: normal !important;
      }
    }
  }
