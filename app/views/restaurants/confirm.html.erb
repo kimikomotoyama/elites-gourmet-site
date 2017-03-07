@@ -58,6 +58,12 @@
         <%= rf.hidden_field :image %>
         <%= rf.hidden_field :image_cache %>
       <% end %>
+      
+      <tr>
+        <th><%= f.label :about %></th>
+        <td><%= @restaurant.about ? raw(@restaurant.about) : '' %></td>
+        <%= f.hidden_field :about %>
+      </tr>
 
     </table>
 
